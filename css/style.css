@@ -41,7 +41,6 @@
     background-color: rgba(0, 0, 0, 0.911);
     color: white;
     border: none;
-    transition: 2s;
 }
 
 /*theme-blue*/
@@ -64,7 +63,6 @@
 .theme-blue button:hover{
     background-color: cadetblue;
     color: black;
-    transition: 2s;
 }
 
 /*theme-light*/
