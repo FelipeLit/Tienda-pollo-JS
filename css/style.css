@@ -1,0 +1,56 @@
+.descripcion{
+    font-weight: 290 !important;
+}
+
+.centerImage{
+    display: flex;
+    justify-content: center;
+}
+
+.imageHeight{
+    height: 100px;
+}
+
+
+/*theme Dark*/
+
+.theme-dark{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.theme-dark button{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.theme-dark label {
+    color: white;
+}
+
+.theme-dark button:hover{
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    border: none;
+}
+
+/*theme-blue*/
+.theme-blue {
+    background-color: rgba(85, 85, 189, 0.623);
+}
+.theme-blue .card{
+    background-color: rgba(73, 46, 192, 0.623);
+}
+
+.theme-blue button{
+    background-color: wheat;
+    border: none;
+    color: black;
+}
+
+.theme-blue button:hover{
+    background-color: cadetblue;
+    color: black;
+}
+
+
