@@ -63,7 +63,7 @@ let spaceImage = document.createElement('div');
 spaceImage.classList.add('centerImage')
 let logoImage = document.createElement('img')
 logoImage.setAttribute('src', './img/KFClogo.png')
-logoImage.classList.add('img-fluid', 'mb-5', 'imageHeight')
+logoImage.classList.add('mb-3', 'imageHeight')
 spaceImage.appendChild(logoImage)
 container.appendChild(spaceImage)
 
@@ -103,7 +103,7 @@ languageAndThemes.forEach(element => {
 function createCardBurger (imgSrc, priceText, tittleText, descriptionText){
 
     let column = document.createElement('div');
-    column.classList.add('col-md-3', 'mt-4')
+    column.classList.add('col-md-3', 'mt-4','card-group')
     row.appendChild(column);
 
     //creamos card
@@ -134,14 +134,14 @@ function createCardBurger (imgSrc, priceText, tittleText, descriptionText){
     descriptionBurger.innerText=descriptionText
 
     let btnBuy = document.createElement('button');
-    btnBuy.classList.add('btn', 'btn-danger', 'w-100', 'mt-3')
+    btnBuy.classList.add('btn', 'btn-danger', 'w-75', 'mb-3', 'buttonCenter')
     btnBuy.innerText='Comprar'   
 
     cardBody.appendChild(price);
     cardBody.appendChild(tittleBurger);
     cardBody.appendChild(descriptionBurger);
-    cardBody.appendChild(btnBuy);
     card.appendChild(cardBody);
+    card.appendChild(btnBuy);
 
     return column
 }
@@ -171,6 +171,22 @@ let hamburgerSeven = createCardBurger ('./img/hamburguesa-7.webp', '$ 23.900', '
 
 let hamburgerEight = createCardBurger ('./img/hamburguesa-8.webp', '$ 8.900', 'Combo Sándwich Crispy BBQ', 'Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla cripy')
 
+//footer
+let divFooter = document.createElement('div');
+divFooter.classList.add('card', 'mt-3')
+document.body.appendChild(divFooter)
+
+let divRow = document.createElement('div');
+divRow.classList.add('row', 'g-0')
+divFooter.appendChild(divRow);
+
+let divCol = document.createElement('div');
+divCol.classList.add('col-md-12');
+divRow.appendChild(divCol)
+
+
+
+
 //change theme
 let theme = document.getElementById('theme');
 
@@ -197,11 +213,25 @@ theme.addEventListener('change', ()=>{
 
 window.addEventListener('DOMContentLoaded',()=>{
     let obtainTheme = localStorage.getItem('theme')
+
     if (obtainTheme === 'theme-dark'){
         document.body.classList.toggle('theme-dark');
         document.body.classList.remove('theme-light', 'theme-blue');
         localStorage.setItem('theme', 'theme-dark');
     }
+    else if (obtainTheme === 'theme-blue'){
+        document.body.classList.toggle('theme-blue');
+        document.body.classList.remove('theme-light', 'theme-dark');
+        localStorage.setItem('theme', 'theme-blue')
+    }
+    else{
+        document.body.classList.toggle('theme-light');
+        document.body.classList.remove('theme-dark')
+        localStorage.setItem('theme', 'theme-light')
+    }
 });
+
+
+
 
 

@@ -12,45 +12,67 @@
 }
 
 
+/*centerButton*/
+
+.buttonCenter{
+    margin: 0 auto;
+}
+
 /*theme Dark*/
 
 .theme-dark{
     background-color: rgba(0, 0, 0, 0.911);
+    transition: 2s;
 }
 
 .theme-dark button{
     background-color: white;
     border: 1px solid black;
     color: black;
+    transition: 2s;
 }
 
 .theme-dark label {
     color: white;
+    transition: 2s;
 }
 
 .theme-dark button:hover{
     background-color: rgba(0, 0, 0, 0.911);
     color: white;
     border: none;
+    transition: 2s;
 }
 
 /*theme-blue*/
 .theme-blue {
-    background-color: rgba(85, 85, 189, 0.623);
+    background-color: rgba(85, 71, 165, 0.74);
+    transition: 2s;
 }
 .theme-blue .card{
     background-color: rgba(73, 46, 192, 0.623);
+    transition: 2s;
 }
 
 .theme-blue button{
     background-color: wheat;
     border: none;
     color: black;
+    transition: 2s;
 }
 
 .theme-blue button:hover{
     background-color: cadetblue;
     color: black;
+    transition: 2s;
 }
 
+/*theme-light*/
 
+.theme-light{
+    transition: 2s;
+}
+
+.theme-blue button{
+    transition: 2s;
+}
