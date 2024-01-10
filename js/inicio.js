@@ -184,8 +184,9 @@ let divCol = document.createElement('div');
 divCol.classList.add('col-md-12');
 divRow.appendChild(divCol)
 
-
-
+let imgFooter = document.createElement('img');
+img.setAttribute('src', '');
+divCol.appendChild(imgFooter)
 
 //change theme
 let theme = document.getElementById('theme');
