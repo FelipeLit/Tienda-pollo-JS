@@ -172,6 +172,7 @@ let hamburgerSeven = createCardBurger ('./img/hamburguesa-7.webp', '$ 23.900', '
 let hamburgerEight = createCardBurger ('./img/hamburguesa-8.webp', '$ 8.900', 'Combo Sándwich Crispy BBQ', 'Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla cripy')
 
 //footer
+/*
 let divFooter = document.createElement('div');
 divFooter.classList.add('card', 'mt-3')
 document.body.appendChild(divFooter)
@@ -187,6 +188,7 @@ divRow.appendChild(divCol)
 let imgFooter = document.createElement('img');
 img.setAttribute('src', '');
 divCol.appendChild(imgFooter)
+*/
 
 //change theme
 let theme = document.getElementById('theme');
